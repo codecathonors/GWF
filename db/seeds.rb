@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+require 'faker'
+
+puts "Starting seed"
+
+5.times do 
+    title = Faker::Lorem.sentence(word_count: 3)
+    text = Faker::Lorem.sentence(word_count: 200)
+    date = Faker::Date.in_date_period
+    News.create(title: title, text: text, date: date)
+end
