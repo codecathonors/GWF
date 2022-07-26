@@ -4,6 +4,7 @@ import Home from './Home';
 import Donate from './Donate';
 import About from './About';
 import News from './News';
+import NavBar from './NavBar';
 
 function App() {
   const [news, setNews] = useState([]);
@@ -19,29 +20,25 @@ function App() {
       <div className="App">
         <Switch>
           <Route exact path="/">
+            <NavBar />
             <Home news={news}/>
           </Route>
           <Route path="/donate">
+            <NavBar />
             <Donate />
           </Route>
           <Route path="/about">
+            <NavBar />
             <About />
           </Route>
           <Route path="/news">
+            <NavBar />
             <News news={news}/>
           </Route>
         </Switch>
       </div>
     </BrowserRouter>
-  );
-
-          
-  {/* <NewsList news={news}/></Route>
-    
-            <Route exact path="/mission"></Route> */
-            /* <Route path="/news/:id"> */}
-
-  
+  ); 
 }
 
 export default App;
