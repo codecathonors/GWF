@@ -1,22 +1,38 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 function NavBar( ) {
 
+    // const history = useHistory()
 
+    function handleClick(e) {
+        e.preventDefault()
+        window.location.replace("/donate")
+    }
 
     return (
-        <>
-            <nav className="nav">
-                <NavLink to="/" className="site-title">The Gregory Weiner Foundation</NavLink>
-                <ul>
-                    <li><NavLink exact to="/">Our Mission</NavLink></li>
-                    <li><NavLink to="/about">About Greg</NavLink></li>
-                    <li><NavLink to="/news">News</NavLink></li>
-                    <li><NavLink to="/donate">Donate</NavLink></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="/">The Gregory Weiner Foundation</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About Greg</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/news">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-danger navbar-btn" onClick={handleClick}>Donate</button>
+                    </li>
                 </ul>
-            </nav>
-        </>
+            </div>
+        </nav>
     )
 }
 
