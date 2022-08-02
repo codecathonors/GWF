@@ -13,10 +13,15 @@ function Footer() {
     }
 
     return (
+        <>
         <nav class="navbar fixed-bottom navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">©2014, The Gregory Weiner Foundation</a>
-                <a class="nav-item">Contact Us</a> 
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                    Contact Us
+                </button>
+                
+               
                 <a class="nav-item">Privacy Policy</a> 
                 <a class="nav-item"><button class="btn btn-primary" onClick={handleFacebookClick}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
@@ -32,6 +37,31 @@ function Footer() {
                 </a>
             </div>
         </nav>
+
+            
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"></div>
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+            
+        </>
+        
     )
 }
 
