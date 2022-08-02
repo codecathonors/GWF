@@ -6,6 +6,7 @@ import Donate from './Donate';
 import About from './About';
 import News from './News';
 import NavBar from './NavBar';
+import Footer from './Footer';
 
 function App() {
   const [news, setNews] = useState([]);
@@ -23,18 +24,22 @@ function App() {
           <Route exact path="/">
             <NavBar />
             <Home news={news}/>
+            <Footer />
           </Route>
           <Route path="/donate">
             <NavBar />
             <Donate />
+            <Footer />
           </Route>
           <Route path="/about">
             <NavBar />
             <About />
+            <Footer />
           </Route>
           <Route path="/news">
             <NavBar />
             <News news={news}/>
+            <Footer />
           </Route>
         </Switch>
       </div>

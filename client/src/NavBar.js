@@ -1,9 +1,6 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
 
-function NavBar( ) {
-
-    // const history = useHistory()
+function NavBar() {
 
     function handleClick(e) {
         e.preventDefault()
@@ -17,7 +14,7 @@ function NavBar( ) {
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="nav nav-pills nav-fill">
                     <li class="nav-item active">
                         <a class="nav-link" href="/">Home</a>
                     </li>
@@ -27,10 +24,10 @@ function NavBar( ) {
                     <li class="nav-item">
                         <a class="nav-link" href="/news">News</a>
                     </li>
-                    <li class="nav-item">
-                        <button class="btn btn-danger navbar-btn" onClick={handleClick}>Donate</button>
-                    </li>
                 </ul>
+            </div>
+            <div>
+                <button class="btn btn-danger navbar-btn" onClick={handleClick}>Donate</button>
             </div>
         </nav>
     )
