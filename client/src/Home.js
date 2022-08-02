@@ -1,15 +1,20 @@
 import React from 'react';
 
 function Home( { news } ) {
-  console.log(news)
-  const singleArticle = news.map(single => <p>{single.text.slice(0, 200)}</p>)
-   
+  // console.log(news)
+  const singleArticle = news.map(single =>
+    <div class="card bg-light mb-3">
+      <div class="card-body">
+        <h5 class="card-title">{single.title}</h5>
+        <h6>{single.date}</h6>
+      </div></div>
+  )
+
   return (
     <>
     <div className="homepage">
       <h1>The Gregory Weiner Foundation</h1>
       <h3>Our Mission</h3>
-        <div class="float-end">Float end on all viewport sizes</div>
       <p>Those who knew Greg were keenly aware of his love of family, friends and life. This is why Greg's legacy must include promotion of helmet safety awareness - in hope that others may never experience the devastation such a tragedy bears. The Gregory Weiner Foundation intends to establish and support outreach programs that facilitate those wishing to learn more about helmet safety, and accommodating helmet use by individuals engaged in recreational activities.</p>
     </div>
     <div className="why-helmet">
