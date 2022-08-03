@@ -7,8 +7,8 @@ function Donate( ) {
       <>
       
         <div class="card w-50 bg-warning card border-dark mx-auto" style={{marginTop: 30, marginBottom: 20 }} >
-          <div class="card-header text-center" style={{ fontSize: 30, letterSpacing: 6, color: "#565656", paddingTop: 30, paddingBottom: 30 }}>
-            <b>DONATE</b>
+          <div class="card-header text-center" style={{ fontSize: 30, letterSpacing: 3, color: "#565656", paddingTop: 30, paddingBottom: 30 }}>
+            <b>SUPPORT THE CAUSE</b>
           </div>
         <div class="card-body text-center">
             <h5 class="card-title">At present, the Foundation can only accept donations by mail. <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">

@@ -16,13 +16,16 @@ function NavBar() {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nav nav-pills">
                     <li class="nav-item active">
-                        <a class="nav-link text-decoration-none" style={{ color: "#565656" }} href="/">Home</a>
+                        <a class="nav-link text-decoration-none" style={{ color: "#565656", paddingRight: 60 }} href="/">Our Mission</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-decoration-none" style={{ color: "#565656" }} href="/about">About Greg</a>
+                        <a class="nav-link text-decoration-none" style={{ color: "#565656", paddingRight: 60 }} href="/about">About Greg</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-decoration-none" style={{ color: "#565656" }} href="/news">News</a>
+                        <a class="nav-link text-decoration-none" style={{ color: "#565656", paddingRight: 60 }} href="/news">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none" style={{ color: "#565656", paddingRight: 60 }} href="/partners">Partners</a>
                     </li>
                     <li>
                         <button class="btn btn-danger navbar-btn" style={{ fontSize: 18, paddingLeft: 18, paddingRight: 18 }} onClick={handleClick}>Donate</button>
