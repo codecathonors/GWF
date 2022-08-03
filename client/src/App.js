@@ -8,6 +8,7 @@ import NavBar from './NavBar';
 import Footer from './Footer';
 import Contact from './Contact';
 import Disclaimer from './Disclaimer';
+import Links from './Links';
 
 function App() {
   const [news, setNews] = useState([]);
@@ -30,6 +31,11 @@ function App() {
           <Route path="/donate">
             <NavBar />
             <Donate />
+            <Footer />
+          </Route>
+          <Route path="/partners">
+            <NavBar />
+            <Links />
             <Footer />
           </Route>
           <Route path="/about">
