@@ -28,8 +28,6 @@ function NavBar() {
                         <button class="btn btn-danger navbar-btn" style={{ fontSize: 18, paddingLeft: 18, paddingRight: 18 }} onClick={handleClick}>Donate</button>
                     </li>
                 </ul>
-            
-                
             </div>
         </nav>
     )

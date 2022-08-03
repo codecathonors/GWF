@@ -4,8 +4,8 @@ import React from "react";
 function About( ) {
     
   return (
-    <div class="card">
-      <div class="card-body text-center">
+    <div class="card w-75 mx-auto" style={{ marginTop: 50, padding: 20}}>
+      <div class="card-body text-center" >
         <h1 class="card-title">About Greg</h1>
         <br></br>
         <img class="card-img w-25 p-3 img-thumbnail" src="https://gregoryweiner.org/uploads/3/4/1/2/3412272/7583018.jpg" alt="Greg's highschool yearbook photo"></img>
