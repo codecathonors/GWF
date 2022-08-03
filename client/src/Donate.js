@@ -4,27 +4,45 @@ import React from "react";
 function Donate( ) {
     
     return (
-      <div class="card">
+      <>
+      
+        <div class="card w-50 bg-warning card border-dark mx-auto" style={{marginTop: 30, marginBottom: 20 }} >
+          <div class="card-header text-center" style={{ fontSize: 30, letterSpacing: 6, color: "#565656", paddingTop: 30, paddingBottom: 30 }}>
+            <b>DONATE</b>
+          </div>
         <div class="card-body text-center">
-          <h1 class="card-title">Donate</h1>
-          <p class="card-text">At present, the Foundation can only accept donations by mail.
+            <h5 class="card-title">At present, the Foundation can only accept donations by mail. <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+            </svg></h5><p>
         <br></br>
         <br></br>
           Please mail donations to: 
         <br></br>
-        <br></br><b>
+              <br></br><b><p class="user-select-all" style={{ color: "#565656" }}>
           The Gregory Weiner Foundation, 
         <br></br>
           6 Briarwood Road, 
         <br></br>
-          Shrewsbury, PA 17361. 
-              <br></br></b>
+          Shrewsbury, PA 17361 
+            </p><br></br></b>
         <br></br>
-          Please make checks payable to: <b>The Gregory Weiner Foundation</b></p>
+              Please make checks payable to: <b><p class="user-select-all" style={{ color: "#565656" }}>The Gregory Weiner Foundation</p></b></p>
         <br></br>
-          <p class="card-text">The Gregory Weiner foundation has an <a href="https://smile.amazon.com/charity/select/search?q=The+Gregory+Weiner" class="link-warning">Amazon Smile Account</a>. We would be deeply appreciative if you elected us for your donations.</p>
+            <div class="card">
+              <div class="card-body card border-dark">
+                <p class="card-text text-black">The Gregory Weiner foundation has an <a href="https://smile.amazon.com/charity/select/search?q=The+Gregory+Weiner" class="link-warning">Amazon Smile Account</a>. We would be deeply appreciative if you elected us for your donations.</p>
+              </div>
+            </div>
         </div>
       </div>
+
+
+        <div class="card w-75 mx-auto" style={{marginTop: 40}}>
+  <div class="card-body" >
+    <b>Tax Information:</b> The Gregory Weiner Foundation is registered as a 501(c)(3) non-profit organization. Contributions to The Gregory Weiner Foundation are tax-deductible to the extent permitted by law. The Gregory Weiner Foundation's tax identification number is 26-3916703. Thank you for your generosity!
+  </div>
+</div>
+</>
     );
 }
     
