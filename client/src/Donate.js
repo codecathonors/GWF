@@ -7,8 +7,8 @@ function Donate( ) {
       <>
       
         <div class="card w-50 bg-warning card border-dark mx-auto" style={{marginTop: 30, marginBottom: 20 }} >
-          <div class="card-header text-center" style={{ fontSize: 30, letterSpacing: 3, color: "#565656", paddingTop: 30, paddingBottom: 30 }}>
-            <b>SUPPORT THE CAUSE</b>
+          <div class="card-header text-center" style={{ fontSize: 30, letterSpacing: 1, paddingTop: 10, paddingBottom: 10 }}>
+            <b>SUPPORT</b>
           </div>
         <div class="card-body text-center">
             <h5 class="card-title">At present, the Foundation can only accept donations by mail. <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
@@ -24,7 +24,7 @@ function Donate( ) {
           6 Briarwood Road, 
         <br></br>
           Shrewsbury, PA 17361 
-            </p><br></br></b>
+            </p></b>
         <br></br>
               Please make checks payable to: <b><p class="user-select-all" style={{ color: "#565656" }}>The Gregory Weiner Foundation</p></b></p>
         <br></br>
@@ -37,7 +37,7 @@ function Donate( ) {
       </div>
 
 
-        <div class="card w-75 mx-auto" style={{marginTop: 40}}>
+        <div class="card w-75 mx-auto" style={{marginTop: 60}}>
   <div class="card-body" >
     <b>Tax Information:</b> The Gregory Weiner Foundation is registered as a 501(c)(3) non-profit organization. Contributions to The Gregory Weiner Foundation are tax-deductible to the extent permitted by law. The Gregory Weiner Foundation's tax identification number is 26-3916703. Thank you for your generosity!
   </div>

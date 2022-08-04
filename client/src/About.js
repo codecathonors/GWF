@@ -4,11 +4,13 @@ import React from "react";
 function About( ) {
     
   return (
-    <div class="card w-75 mx-auto" style={{ marginTop: 50, padding: 20}}>
+    <div class="card w-75 mx-auto bg-light border-warning " style={{ marginTop: 50, padding: 20, paddingLeft: 40, paddingRight: 40, backgroundColor: "#DFC98A" }}>
       <div class="card-body text-center" >
         <h1 class="card-title">About Greg</h1>
         <br></br>
         <img class="card-img w-25 p-3 img-thumbnail" src="https://gregoryweiner.org/uploads/3/4/1/2/3412272/7583018.jpg" alt="Greg's highschool yearbook photo"></img>
+        <br></br>
+        <br></br>
         <p class="card-text">Greg was born on April 16, 1990. He was a son, a brother, a friend, a student, an athlete, but most of all he was a young man who truly knew how to live. 
         <br></br>
         <br></br>
