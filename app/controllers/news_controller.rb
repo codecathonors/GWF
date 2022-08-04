@@ -21,6 +21,12 @@ class NewsController < ApplicationController
             newsSingle.update!(news_params)
             render json: newsSingle, status: :accepted
         end
+
+        def destroy
+            newsSingle = News.find_by!(id: params[:id])
+            newsSingle.destroy
+            head :no_content
+        end
     
         private
     

@@ -19,7 +19,7 @@ function NavBar() {
                         <a class="nav-link text-decoration-none" style={{ color: "#565656", paddingRight: 60 }} href="/">Our Mission</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-decoration-none" style={{ color: "#565656", paddingRight: 60 }} href="/about">About Greg</a>
+                        <a class="nav-link text-decoration-none" style={{ color: "#565656", paddingRight: 60 }} href="/about">About Gregory</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-decoration-none" style={{ color: "#565656", paddingRight: 60 }} href="/news">News</a>

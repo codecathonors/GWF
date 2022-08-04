@@ -19,6 +19,10 @@ function App() {
       .then((news) => setNews(news));
   }, []);
 
+  const handleNewArticleForm = (newArticle) => {
+    setNews(newArticle, [...news])
+  }
+
   return (
     <BrowserRouter>
       <div className="App">
@@ -45,7 +49,7 @@ function App() {
           </Route>
           <Route path="/news">
             <NavBar />
-            <News news={news}/>
+            <News news={news} handleNewArticleForm={handleNewArticleForm}/>
             <Footer />
           </Route>
           <Route path="/contact-us">

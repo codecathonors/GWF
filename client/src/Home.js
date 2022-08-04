@@ -13,9 +13,9 @@ function Home( { news } ) {
   return (
    
     <div class="homepage">
-      <div class="card w-75 mx-auto" style={{ padding: 15, paddingTop: 20, marginTop: 20}}>
+      <div class="card w-75 mx-auto" style={{ padding: 35, paddingLeft: 80, paddingRight: 80, paddingTop: 20, marginTop: 20}}>
         <img src="https://gregoryweiner.org/uploads/3/4/1/2/3412272/1391135336.png" class="card-img-top w-50 mx-auto" />
-        <div class="card-title mx-auto" style={{fontSize: 35, paddingTop: 20}}>Our Mission</div>
+        <div class="card-title mx-auto" style={{ fontSize: 35, paddingTop: 20 }}><b>Our Mission</b></div>
         <div class="card-body">
           <p class="card-text" style={{ fontSize: 19, paddingRight: 50, paddingLeft: 50, textAlign: "center" }}>Those who knew Greg were keenly aware of his love of family, friends and life. This is why Greg's legacy must include promotion of helmet safety awareness - in hope that others may never experience the devastation such a tragedy bears. <br></br> <br></br>The Gregory Weiner Foundation intends to establish and support outreach programs that facilitate those wishing to learn more about helmet safety, and accommodating helmet use by individuals engaged in recreational activities.</p>
         </div>
@@ -36,8 +36,6 @@ function Home( { news } ) {
           </div>
         </div>
       </div>
-      {/* <h2>News</h2>
-      {singleArticle} */}
     </div>
 
   );
