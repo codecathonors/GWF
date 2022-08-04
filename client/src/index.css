@@ -17,6 +17,9 @@ code {
   margin-top: 0 !important;
 }
 
+.contact:hover{
+  background-color: #D4d4d4;
+}
 /* .nav {
   background-color: rgba(233, 203, 175, 0.9);
   color: rgb(26, 19, 19);
