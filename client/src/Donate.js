@@ -26,11 +26,11 @@ function Donate( ) {
           Shrewsbury, PA 17361 
             </p></b>
         <br></br>
-              Please make checks payable to: <b><p class="user-select-all" style={{ color: "#565656" }}>The Gregory Weiner Foundation</p></b></p>
+              Please make checks payable to: <b><u><p class="user-select-all" style={{ color: "#565656", fontSize: 25 }}>The Gregory Weiner Foundation</p></u></b></p>
         <br></br>
-            <div class="card">
-              <div class="card-body card border-dark">
-                <p class="card-text text-black">The Gregory Weiner foundation has an <a href="https://smile.amazon.com/charity/select/search?q=The+Gregory+Weiner" class="link-warning">Amazon Smile Account</a>. We would be deeply appreciative if you elected us for your donations.</p>
+            <div class="card w-75 mx-auto">
+              <div class="card-body card border-dark " style={{ fontSize: 20, padding: 20 }}>
+                <p class="card-text text-black"><b>The Gregory Weiner Foundation</b> has an <br></br><a href="https://smile.amazon.com/charity/select/search?q=The+Gregory+Weiner" class="link-warning">Amazon Smile Account</a>! <br></br><br></br>We would be deeply appreciative if you elected us for your donations.</p>
               </div>
             </div>
         </div>
