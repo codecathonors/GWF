@@ -28,18 +28,24 @@ function Donate( ) {
         <br></br>
               Please make checks payable to: <b><u><p class="user-select-all" style={{ color: "#565656", fontSize: 25 }}>The Gregory Weiner Foundation</p></u></b></p>
         <br></br>
+            
             <div class="card w-75 mx-auto">
               <div class="card-body card border-dark " style={{ fontSize: 20, padding: 20 }}>
                 <p class="card-text text-black"><b>The Gregory Weiner Foundation</b> has an <br></br><a href="https://smile.amazon.com/charity/select/search?q=The+Gregory+Weiner" class="link-warning">Amazon Smile Account</a>! <br></br><br></br>We would be deeply appreciative if you elected us for your donations.</p>
               </div>
             </div>
+        <br></br>
+        <br></br>
+            <div style={{ fontSize: 30, padding: 20 }}>
+              <i>Thank you for your generosity!</i>
+        </div>
         </div>
       </div>
 
 
         <div class="card w-75 mx-auto" style={{marginTop: 60}}>
   <div class="card-body" >
-    <b>Tax Information:</b> The Gregory Weiner Foundation is registered as a 501(c)(3) non-profit organization. Contributions to The Gregory Weiner Foundation are tax-deductible to the extent permitted by law. The Gregory Weiner Foundation's tax identification number is 26-3916703. Thank you for your generosity!
+    <b>Tax Information:</b> The Gregory Weiner Foundation is registered as a 501(c)(3) non-profit organization. Contributions to The Gregory Weiner Foundation are tax-deductible to the extent permitted by law. The Gregory Weiner Foundation's tax identification number is 26-3916703.
   </div>
 </div>
 </>
