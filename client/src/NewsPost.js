@@ -30,7 +30,6 @@ function NewsPost({ handleNewArticleForm } ) {
                 } else if (res.status === 200) {
                     res.json().then((json) => {
                         console.log(json.errors);
-                        // setRestaurantPostError(json.errors);
                     })
                 }
             })
@@ -49,11 +48,11 @@ function NewsPost({ handleNewArticleForm } ) {
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Date</label>
-                    <input type="text" class="form-control" onChange={e => setDate(e.target.value)} id="exampleFormControlInput1" placeholder="" />
+                    <input type="text" class="form-control" onChange={e => setDate(e.target.value)} id="exampleFormControlInput1" placeholder="format example: 08/24/2022" />
             </div>
             <div class="form-group">
-                    <label for="exampleFormControlTextarea1" onChange={e => setText(e.target.value)}>Text</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="15"></textarea>
+                    <label for="exampleFormControlTextarea1">Text</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" onChange={e => setText(e.target.value)} rows="15" placeholder="Text of post"></textarea>
             </div>
             {/* <div class="form-group">
                 <label for="exampleFormControlFile1">Example file input</label>

@@ -25,15 +25,11 @@ function News({ news, handleNewArticleForm } ) {
       <button onClick={handleDelete}>Delete</button>
     </div></div>
   )
-
-
-       
+  
   function handleClick() {
     setAddNewArticle(isAddNewArticleVisible => !isAddNewArticleVisible)
   }
 
- 
-    
   return (
     <div className="news-page">
       <h1>News</h1>
