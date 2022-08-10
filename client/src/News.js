@@ -4,16 +4,18 @@ import NewsPost from './NewsPost';
 function News({ news, handleNewArticleForm } ) {
   const [isAddNewArticleVisible, setAddNewArticle] = useState(false);
 
-  console.log(news) //array of objects
+  // console.log(news) 
+  //array of objects
 
-  function handleDelete() {
-    fetch(`/news/${news.id}`, {
-      method: 'DELETE'
-    })
-      .then(res => res.json())
-      .then(res => console.log(res))
-    window.location.reload(true);
-    console.log(singleArticle)
+  function handleDelete(single) {
+    console.log("this should happen later", single)
+    // fetch(`/news/${single.id}`, {
+    //   method: 'DELETE'
+    // })
+    //   .then(res => res.json())
+    //   .then(res => console.log(res))
+    // // window.location.reload(true);
+    // console.log(singleArticle)
   }
   
   const singleArticle = news.map(single => 
@@ -22,7 +24,7 @@ function News({ news, handleNewArticleForm } ) {
     <div class="card-body">
       <h5 class="card-title">{single.title}</h5>
       <p class="card-text">{single.text}</p>
-      <button onClick={handleDelete}>Delete</button>
+        <button type="button" class="btn btn-success" onClick={handleDelete(single)}>Delete</button>
     </div></div>
   )
   
